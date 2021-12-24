@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background: #F2F2F2;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 2em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar .blue {
+  color: #007AF3;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  right: 1em;
+}
+
+.navbar .mobile-menu div {
+  margin: 5px;
+  width: 25px;
+  height: 3px;
+  background: #000;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.navbar .mobile-menu .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-2.75px, 5.35px);
+          transform: rotate(-45deg) translate(-2.75px, 5.35px);
+}
+
+.navbar .mobile-menu .toggle .line2 {
+  opacity: 0;
+}
+
+.navbar .mobile-menu .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-2.75px, -5.35px);
+          transform: rotate(45deg) translate(-2.75px, -5.35px);
+}
+
+nav {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero .container {
+  margin-top: 3.5em;
+}
+
+.hero .container .left-column .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+.hero .container .left-column h1 {
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero .container .left-column .primary-cta {
+  background: #007AF3;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  border-radius: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+}
+
+.hero .container .left-column .watch-cta {
+  display: block;
+  margin-top: 1em;
+  color: #000;
+}
+
+.hero .container .righ-column img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.features {
+  background: #20272E;
+  color: #fff;
+}
+
+.features li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.testimonials {
+  background: #007AF3;
+}
+
+.testimonials li {
+  color: #fff;
+  background: #006BD6;
+  text-align: left;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonials li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006BD6;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: 2em;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: .5em;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid lightgray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact input[type="submit"] {
+  background: #007AF3;
+  color: #fff;
+  cursor: pointer;
+  padding: .6em 1.3em;
+  border-radius: 15px;
+  font-size: 1.4em;
+  border: none;
+  margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 900px) {
+  nav.menu-btn {
+    display: block;
+    overflow-y: scroll;
+  }
+  .mobile-menu div .change {
+    background: #fff;
+  }
+  .navbar .container {
+    padding: 1em;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 54px;
+    background: #20272E;
+    height: 100vh;
+  }
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    text-align: center;
+  }
+  nav li a:hover {
+    font-weight: bold;
+  }
+  nav .secondary-nav {
+    margin-bottom: 5em;
+  }
+  section {
+    padding: 5em 1em;
+  }
+  .hero .container {
+    text-align: center;
+  }
+  .hero .container .left-column {
+    margin-bottom: 4em;
+  }
+  .hero .container .primary-cta {
+    margin: auto;
+  }
+}
+
+.features .container {
+  text-align: center;
+}
+
+.testimonials {
+  padding: 5em 1em;
+}
+
+iframe {
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+  }
+  .navbar .mobile-menu div {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    max-width: 1400px;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 1em;
+  }
+  nav ul li:hover {
+    font-weight: bold;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3.5em auto;
+    max-width: 1400px;
+  }
+  .hero .container .left-column {
+    width: 50%;
+  }
+  .hero .container .righ-column {
+    width: 50%;
+  }
+  .features .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    max-width: 1400px;
+    text-align: initial;
+  }
+  .testimonials {
+    padding: 5em 0em;
+  }
+  .testimonials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    max-width: 1400px;
+  }
+  .testimonials ul li {
+    margin: 1em;
+    width: 80%;
+  }
+  .contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact .contact-right {
+    width: 50%;
+  }
+  .contact .contact-right iframe {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .left-column h1 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  blockquote {
+    margin: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  cite {
+    margin-left: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

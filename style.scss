@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$white: #fff;
+$whitealso: #F2F2F2;
+$black: #000;
+$blue: #007AF3;
+$darkerblue: #006BD6;
+$gray: gray;
+$lightgray: lightgray;
+$charcoal: #20272E;
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background: $whitealso;
+  overflow-x: hidden;
+}
+
+  .navbar {
+    position: fixed;
+    background: $white;
+    width: 100%;
+
+
+  .container {
+    display: flex;
+    padding: 1em 2em;
+  }
+
+    .logo {
+      text-decoration: none;
+      color: $black;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .blue {
+      color: $blue;
+    }
+
+     .mobile-menu {
+       cursor: pointer;
+       z-index: 999;
+       position: fixed;
+       right: 1em;
+
+     div{
+          margin: 5px;
+          width: 25px;
+          height: 3px;
+          background: $black;
+          display: block;
+          transition: transform 0.3s ease-in;
+        }
+        .toggle .line1 {
+          transform: rotate(-45deg) translate(-2.75px, 5.35px);
+        }
+
+        .toggle .line2 {
+          opacity: 0;
+        }
+
+        .toggle .line3 {
+          transform: rotate(45deg) translate(-2.75px, -5.35px);
+        }
+      }
+
+  }
+
+ nav {
+      display: none;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+
+.container {
+  margin-top: 3.5em;
+.left-column {
+
+  .subhead{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $gray;
+    letter-spacing: .3em;
+  }
+
+  h1 {
+    line-height: 1.3em;
+    margin-top: .2em;
+  }
+
+  .primary-cta {
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .watch-cta {
+    display: block;
+    margin-top: 1em;
+    color: $black;
+  }
+}
+  .righ-column {
+    img {
+        width: 100%;
+         max-width: 500px;
+      }
+    }
+   }
+}
+
+ .features {
+    background: $charcoal;
+    color: $white;
+
+
+
+      li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+      }
+
+  }
+
+
+  .testimonials {
+    background: $blue;
+      li {
+        color: $white;
+        background: $darkerblue;
+        text-align: left;
+        padding: 2em 1em;
+
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+
+
+        img {
+          width: 5em;
+          height: 5em;
+          border: 5px solid $darkerblue;
+          border-radius: 50%;
+          display:block;
+          margin: auto;
+        }
+      }
+    }
+
+
+  .contact{
+
+    h2 {
+      font-size: 2em;
+    }
+
+    label {
+      display: block;
+      margin-bottom: .5em;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border-radius: .3em;
+      border: 1px solid $lightgray;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background: $blue;
+      color: $white;
+      cursor: pointer;
+      padding: .6em 1.3em;
+      border-radius: 15px;
+      font-size: 1.4em;
+      border: none;
+      margin-bottom: 3em;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 900px) {
+
+
+  nav.menu-btn{
+    display: block;
+    overflow-y: scroll;
+  }
+
+  .mobile-menu div .change {
+    background: $white;
+  }
+
+  .navbar {
+    .container {
+      padding: 1em;
+    }
+  }
+
+  nav {
+    position: fixed;
+      width: 100%;
+      right: 0;
+      top: 54px;
+      background: $charcoal;
+      height: 100vh;
+
+      li {
+        a {
+          color: $white;
+          text-decoration: none;
+          display: block;
+          padding: 1em;
+          text-align: center;
+
+            &:hover{
+            font-weight: bold;
+          }
+        }
+      }
+
+      .secondary-nav {
+        margin-bottom: 5em;
+      }
+    }
+
+    section {
+      padding: 5em 1em;
+    }
+
+      .hero {
+       .container {
+          text-align: center;
+          .left-column{
+            margin-bottom: 4em;
+            }
+          .primary-cta {
+              margin: auto;
+            }
+          }
+        }
+     }
+
+       .features {
+         .container {
+          text-align: center;
+         }
+      }
+
+
+
+
+
+     .testimonials {
+       padding: 5em 1em;
+     }
+
+      iframe {
+        width: 100%;
+      }
+
+
+
+  @media only screen and (min-width: 900px) {
+
+     .navbar {
+      .container{
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+
+      }
+
+      .mobile-menu {
+
+        div{
+           display: none;
+        }
+      }
+     }
+
+     nav {
+       display: flex;
+       margin-left: auto;
+       max-width: 1400px;
+
+       ul {
+         display: flex;
+         align-items: center;
+
+        li {
+          a {
+            text-decoration: none;
+            color: $black;
+            margin-right: 1em;
+            }
+            &:hover{
+            font-weight: bold;
+          }
+
+        }
+       }
+     }
+
+     .hero {
+       .container {
+          display: flex;
+          margin: 3.5em auto;
+          max-width: 1400px;
+           .left-column {
+            width: 50%;
+          }
+          .righ-column {
+            width: 50%;
+          }
+        }
+
+     }
+
+     .features {
+
+      .container {
+          display: flex;
+          margin: auto;
+          max-width: 1400px;
+          text-align: initial;
+        }
+
+      }
+
+
+     .testimonials {
+       padding: 5em 0em;
+
+       ul {
+         display: flex;
+         margin: auto;
+         max-width: 1400px;
+          li {
+            margin: 1em;
+            width: 80%;
+          }
+       }
+     }
+
+     .contact {
+      .container {
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+        justify-content: space-between;
+        }
+
+        .contact-right {
+          width: 50%;
+
+            iframe {
+              width: 100%;
+              height: 90%;
+          }
+        }
+      }
+  }
+
+
+  @media only screen and (min-width: 350px) {
+
+    .left-column {
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+
+   @media only screen and (max-width: 450px) {
+
+    blockquote {
+      margin: 1em 0;
+    }
+
+  }
+
+    @media only screen and (min-width: 450px) {
+
+    cite {
+      margin-left: 2em;
+    }
+
+  }
